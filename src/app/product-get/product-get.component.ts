@@ -21,6 +21,7 @@ export class ProductGetComponent implements OnInit {
     this.productService.getProducts().subscribe(
       data => {
           console.log(data)
+          //Testing
           this.products = data
       },
       error => {
