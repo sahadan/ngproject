@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableBasicExampleComponent } from './table-basic-example/table-basic-example.component';
 
 import {MatTableModule} from '@angular/material/table';
+import { TableOverviewExampleComponent } from './table-overview-example/table-overview-example.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatTableModule} from '@angular/material/table';
     ProductAddComponent,
     ProductGetComponent,
     ProductEditComponent,
-    TableBasicExampleComponent
+    TableBasicExampleComponent,
+    TableOverviewExampleComponent
   ],
   imports: [
     BrowserModule,
