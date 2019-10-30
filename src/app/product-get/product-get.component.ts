@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
 export class ProductGetComponent implements OnInit {
 
   products: Product[];
-
+ 
+  //Testing for git upload on seventh commit
   constructor(private productService: ProductsService, 
       private router: Router) { }
 
