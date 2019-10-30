@@ -12,13 +12,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsService } from './products.service';
 import { ToastrModule } from "ngx-toastr"
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableBasicExampleComponent } from './table-basic-example/table-basic-example.component';
+
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductAddComponent,
     ProductGetComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    TableBasicExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +33,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ToastrModule.forRoot(),
     ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  MatTableModule: any
+ }
