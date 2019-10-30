@@ -13,10 +13,11 @@ import { ProductsService } from './products.service';
 import { ToastrModule } from "ngx-toastr"
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableBasicExampleComponent } from './table-basic-example/table-basic-example.component';
+import { TableOverviewExampleComponent } from './table-overview-example/table-overview-example.component';
 
 import {MatTableModule} from '@angular/material/table';
-import { TableOverviewExampleComponent } from './table-overview-example/table-overview-example.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
