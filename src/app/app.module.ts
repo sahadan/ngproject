@@ -16,6 +16,7 @@ import { TableBasicExampleComponent } from './table-basic-example/table-basic-ex
 
 import {MatTableModule} from '@angular/material/table';
 import { TableOverviewExampleComponent } from './table-overview-example/table-overview-example.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -36,11 +37,12 @@ import { TableOverviewExampleComponent } from './table-overview-example/table-ov
     ToastrModule.forRoot(),
     ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  MatTableModule: any
+  
  }
