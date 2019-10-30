@@ -25,6 +25,7 @@ const NAMES: string[] = [
   templateUrl: './table-overview-example.component.html',
   styleUrls: ['./table-overview-example.component.css']
 })
+
 export class TableOverviewExampleComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'name', 'progress', 'color'];

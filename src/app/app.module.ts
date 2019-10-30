@@ -18,6 +18,12 @@ import { TableOverviewExampleComponent } from './table-overview-example/table-ov
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,9 @@ import {MatSortModule} from '@angular/material/sort';
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
